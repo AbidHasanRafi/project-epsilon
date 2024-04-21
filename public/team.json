@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Alice Johnson",
+    "position": "Software Engineer",
+    "department": "Engineering",
+    "college": "College of Engineering",
+    "image": "https://robohash.org/Alice.png?set=set4",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "university": "University of Technology",
+    "contactNumber": "+1234567890",
+    "email": "alice@example.com",
+    "facebookId": "alice_facebook",
+    "credentialLink": "https://example.com/alice-credentials"
+  },
+  {
+    "name": "Md. Abid Hasan Rafi",
+    "position": "UI/UX Designer",
+    "department": "Design",
+    "college": "Art College",
+    "image": "https://media.istockphoto.com/id/1322275410/photo/profile-of-young-man.jpg?s=612x612&w=0&k=20&c=Ssbvdy81Z-SZfPvUyxS3sixqpdYIlB7bNQprGaSRSDc=",
+    "bio": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "university": "Art Institute",
+    "contactNumber": "+9876543210",
+    "email": "bob@example.com",
+    "facebookId": "bob_facebook",
+    "credentialLink": "https://example.com/bob-credentials"
+  },
+  {
+    "name": "Catherine Brown",
+    "position": "Product Manager",
+    "department": "Product Management",
+    "college": "Business College",
+    "image": "https://robohash.org/Catherine.png?set=set4",
+    "bio": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "university": "Business School",
+    "contactNumber": "+1112223333",
+    "email": "catherine@example.com",
+    "facebookId": "catherine_facebook",
+    "credentialLink": "https://example.com/catherine-credentials"
+  },
+  {
+    "name": "David Lee",
+    "position": "Marketing Specialist",
+    "department": "Marketing",
+    "college": "Marketing College",
+    "image": "https://robohash.org/David.png?set=set4",
+    "bio": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "university": "Marketing University",
+    "contactNumber": "+4445556666",
+    "email": "david@example.com",
+    "facebookId": "david_facebook",
+    "credentialLink": "https://example.com/david-credentials"
+  },
+  {
+    "name": "Emma Wilson",
+    "position": "Content Writer",
+    "department": "Content",
+    "college": "Writing College",
+    "image": "https://robohash.org/Emma.png?set=set4",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "university": "Writing Institute",
+    "contactNumber": "+7778889999",
+    "email": "emma@example.com",
+    "facebookId": "emma_facebook",
+    "credentialLink": "https://example.com/emma-credentials"
+  }
+]

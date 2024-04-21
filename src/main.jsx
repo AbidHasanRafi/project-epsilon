@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/home/Home";
 import Team from "./components/team/Team";
+import TeamMemberDetails from "./components/team-details/TeamMemberDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/team",
         element: <Team />,
+      },
+      {
+        path: "/team/:id",
+        element: <TeamMemberDetails />,
       },
     ],
   },

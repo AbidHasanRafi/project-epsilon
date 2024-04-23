@@ -109,6 +109,7 @@ const LazyLoadedCard = ({ member }) => {
           flexDirection: "column",
           justifyContent: "space-between",
           flexGrow: 1,
+          padding: "16px",
         }}
       >
         <Avatar
@@ -121,20 +122,22 @@ const LazyLoadedCard = ({ member }) => {
           }}
           variant="square"
         />
-        <Box p={2}>
+        <Box>
           <Typography variant="h6" gutterBottom>
             {member.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary" gutterBottom>
-            {member.position}
+          <Typography variant="body2" color="text.primary" gutterBottom>
+            <span style={{ color: "#3f51b5" }}>{member.position}</span>
           </Typography>
           <Typography variant="body2" color="text.primary" className="mb-2">
             {member.bio}
           </Typography>
-          <Box borderBottom="1px solid #e0e0e0" my={2} />
+          <Box borderBottom="1px solid #e0e0e0" my={1} />
         </Box>
       </CardContent>
-      <Box p={2}>
+      <Box p={1}>
+        {" "}
+        {/* Adjust padding here */}
         <Button
           variant="outlined"
           size="small"
@@ -142,11 +145,12 @@ const LazyLoadedCard = ({ member }) => {
           component={Link}
           to={`/team/${encodeURIComponent(member.name)}`}
           sx={{
-            color: "rgba(63, 81, 181, 0.9)",
-            borderColor: "rgba(63, 81, 181, 0.9)",
+            color: "#fff",
+            backgroundColor: "#3f51b5",
+            marginBottom: "10px",
             "&:hover": {
-              color: "#3f51b5",
               borderColor: "#3f51b5",
+              color: "#3f51b5",
             },
           }}
         >

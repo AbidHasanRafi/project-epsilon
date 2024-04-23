@@ -7,79 +7,109 @@ import {
   Avatar,
   Button,
   Grid,
+  CircularProgress,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
+import ValueIcon from "@mui/icons-material/EmojiObjects";
 
 const Team = () => {
   const [teamMembers, setTeamMembers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("/team.json?url")
       .then((response) => response.json())
-      .then((data) => setTeamMembers(data))
+      .then((data) => {
+        setTeamMembers(data);
+        setIsLoading(false);
+      })
       .catch((error) => console.error("Error fetching team data:", error));
   }, []);
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">Our Team</h1>
-
+      <h1 className="text-3xl text-indigo-700 font-bold mb-4">
+        Meet Team Epsilon
+      </h1>
+      <Box borderBottom="1px solid #e0e0e0" my={1} />
       <section className="mb-8">
-        <Typography variant="h4" gutterBottom>
-          Who We Are
-        </Typography>
-        <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </Typography>
+        <Marquee className="font-bold px-2">
+          We are university students of Gobindaganj Upazila, through our
+          voluntary organization we aim to provides free educational support and
+          foster community relationships through outreach-
+          <span className="mr-2">programs.</span>
+        </Marquee>
       </section>
 
-      <section className="mb-8">
-        <Typography variant="h4" gutterBottom>
-          Meet the Team
-        </Typography>
-        <Grid container spacing={2}>
-          {teamMembers.map((member, index) => (
-            <Grid item key={index} xs={12} sm={6} md={3}>
-              <Suspense fallback={<div>Loading...</div>}>
-                <LazyLoadedCard member={member} />
-              </Suspense>
-            </Grid>
-          ))}
-        </Grid>
-      </section>
+      {isLoading ? (
+        <div className="flex justify-center">
+          <CircularProgress />
+        </div>
+      ) : (
+        <section className="mb-8">
+          <Grid container spacing={2}>
+            {teamMembers.map((member, index) => (
+              <Grid item key={index} xs={12} sm={6} md={3}>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <LazyLoadedCard member={member} />
+                </Suspense>
+              </Grid>
+            ))}
+          </Grid>
+        </section>
+      )}
 
-      <section className="mb-8">
-        <Typography variant="h4" gutterBottom>
+      <section className="mb-12">
+        <Typography
+          variant="h4"
+          className="text-3xl font-bold text-indigo-700 mb-6"
+        >
           Our Values
         </Typography>
-        <ul>
-          <li className="mb-2">Innovation</li>
-          <li className="mb-2">Teamwork</li>
-          <li className="mb-2">Quality</li>
-          <li className="mb-2">Customer Satisfaction</li>
-        </ul>
+        <br />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <ValueCard title="Volunteering" color="green">
+            We believe in giving back to our community through voluntary
+            efforts.
+          </ValueCard>
+          <ValueCard title="Teamwork" color="yellow">
+            Collaboration and teamwork are the keys to our success.
+          </ValueCard>
+          <ValueCard title="Quality Education" color="blue">
+            Providing quality education is our top priority.
+          </ValueCard>
+          <ValueCard title="Consumer Satisfaction" color="pink">
+            We strive to ensure our consumers are fully satisfied with our
+            services.
+          </ValueCard>
+        </div>
       </section>
 
-      <section className="mb-8">
-        <Typography variant="h4" gutterBottom>
-          Mission and Vision
-        </Typography>
-        <Typography>
-          Our mission is to provide innovative solutions that exceed customer
-          expectations, while our vision is to become a global leader in our
-          industry through continuous improvement and customer satisfaction.
-        </Typography>
-      </section>
-
-      <section>
-        <Typography variant="h4" gutterBottom>
-          Contact Us
-        </Typography>
-        <Typography>Email: info@example.com</Typography>
-        <Typography>Phone: +1234567890</Typography>
+      <section
+        id="contact-section"
+        className="mb-12 rounded-lg border border-gray-300 p-8"
+      >
+        <div>
+          <Typography
+            variant="h4"
+            className={`text-3xl font-extrabold text-indigo-700 mb-4`}
+          >
+            Contact Us
+          </Typography>
+          <br />
+          <div className="flex flex-col items-center space-y-4 border-b-2 border-gray-400 pb-4 mb-4">
+            <div className="text-lg font-semibold">
+              <span>Email:</span> epsilon.gobindaganj@gmail.com
+            </div>
+            <div className="text-lg font-semibold">
+              <span>Phone:</span> +1234567890
+            </div>
+          </div>
+          <Button variant="contained" color="primary">
+            Facebook Page
+          </Button>
+        </div>
       </section>
     </div>
   );
@@ -89,13 +119,14 @@ const LazyLoadedCard = ({ member }) => {
   return (
     <Card
       sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
         minWidth: 240,
         margin: "0.5rem",
         borderRadius: "10px",
         boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.1)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
         height: "100%",
         transition: "box-shadow 0.3s ease",
         "&:hover": {
@@ -110,15 +141,17 @@ const LazyLoadedCard = ({ member }) => {
           justifyContent: "space-between",
           flexGrow: 1,
           padding: "16px",
+          alignItems: "center",
         }}
       >
         <Avatar
           src={member.image}
           alt={member.name}
           sx={{
-            width: "100%",
+            width: "80%",
             height: "auto",
-            borderRadius: "10px 10px 0 0",
+            borderRadius: "50%",
+            border: "4px solid #3f51b5",
           }}
           variant="square"
         />
@@ -136,8 +169,6 @@ const LazyLoadedCard = ({ member }) => {
         </Box>
       </CardContent>
       <Box p={1}>
-        {" "}
-        {/* Adjust padding here */}
         <Button
           variant="outlined"
           size="small"
@@ -158,6 +189,23 @@ const LazyLoadedCard = ({ member }) => {
         </Button>
       </Box>
     </Card>
+  );
+};
+
+const ValueCard = ({ title, color, children }) => {
+  return (
+    <div className={`bg-${color}-100 p-4 rounded-lg shadow-md`}>
+      <ValueIcon className={`w-12 h-12 mb-4 text-${color}-500 mx-auto`} />
+      <Typography
+        variant="h6"
+        className={`text-lg font-semibold text-${color}-700 text-center mb-4`}
+      >
+        {title}
+      </Typography>
+      <Typography variant="body2" className="text-base text-gray-700">
+        {children}
+      </Typography>
+    </div>
   );
 };
 

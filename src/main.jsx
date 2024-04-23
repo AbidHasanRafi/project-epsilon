@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/home/Home";
 import Team from "./components/team/Team";
 import TeamMemberDetails from "./components/team-details/TeamMemberDetails";
+import ActivityPage from "./components/activity/ActivityPage.jsx";
+import ActivityDetails from "./components/activity/ActivityDetails";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +23,16 @@ const router = createBrowserRouter([
         element: <Team />,
       },
       {
+        path: "/activity",
+        element: <ActivityPage />,
+      },
+      {
         path: "/team/:id",
         element: <TeamMemberDetails />,
+      },
+      {
+        path: "/activity/:id",
+        element: <ActivityDetails />,
       },
     ],
   },

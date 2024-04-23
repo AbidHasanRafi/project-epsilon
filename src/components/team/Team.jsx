@@ -42,7 +42,7 @@ const Team = () => {
         </Typography>
         <Grid container spacing={2}>
           {teamMembers.map((member, index) => (
-            <Grid item key={index} xs={12} sm={6} md={4}>
+            <Grid item key={index} xs={12} sm={6} md={3}>
               <Suspense fallback={<div>Loading...</div>}>
                 <LazyLoadedCard member={member} />
               </Suspense>
@@ -91,41 +91,66 @@ const LazyLoadedCard = ({ member }) => {
       sx={{
         minWidth: 240,
         margin: "0.5rem",
-        border: "2px solid #3f51b5",
         borderRadius: "10px",
-        boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.2)",
+        boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.1)",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "space-between",
         height: "100%",
+        transition: "box-shadow 0.3s ease",
+        "&:hover": {
+          boxShadow: "0px 0px 30px 0px rgba(0,0,0,0.2)",
+        },
       }}
     >
-      <CardContent style={{ flex: "1 0 auto" }}>
+      <CardContent
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          flexGrow: 1,
+        }}
+      >
         <Avatar
           src={member.image}
           alt={member.name}
           sx={{
             width: "100%",
             height: "auto",
-            borderRadius: 3,
-            marginBottom: "1rem",
+            borderRadius: "10px 10px 0 0",
           }}
           variant="square"
         />
-        <Typography variant="h6" gutterBottom>
-          {member.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" gutterBottom>
-          {member.position}
-        </Typography>
-        <Typography variant="body2" color="text.primary" className="mb-2">
-          {member.bio}
-        </Typography>
+        <Box p={2}>
+          <Typography variant="h6" gutterBottom>
+            {member.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" gutterBottom>
+            {member.position}
+          </Typography>
+          <Typography variant="body2" color="text.primary" className="mb-2">
+            {member.bio}
+          </Typography>
+          <Box borderBottom="1px solid #e0e0e0" my={2} />
+        </Box>
       </CardContent>
       <Box p={2}>
-        <Button variant="outlined" size="small" sx={{ width: "100%" }}>
-          <Link to={`/team/${encodeURIComponent(member.name)}`}>
-            View Details
-          </Link>
+        <Button
+          variant="outlined"
+          size="small"
+          fullWidth
+          component={Link}
+          to={`/team/${encodeURIComponent(member.name)}`}
+          sx={{
+            color: "rgba(63, 81, 181, 0.9)",
+            borderColor: "rgba(63, 81, 181, 0.9)",
+            "&:hover": {
+              color: "#3f51b5",
+              borderColor: "#3f51b5",
+            },
+          }}
+        >
+          View Details
         </Button>
       </Box>
     </Card>

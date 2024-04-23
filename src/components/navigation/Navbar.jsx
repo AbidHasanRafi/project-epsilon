@@ -8,16 +8,18 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 
 const pages = [
   { name: "Home", path: "/" },
-  { name: "Our Team", path: "/team" },
+  { name: "Team", path: "/team" },
+  { name: "Activity", path: "/activity" },
 ];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const location = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -59,8 +61,12 @@ function Navbar() {
                     display: "block",
                     fontSize: "1.1rem",
                     fontWeight: "bold",
-                    letterSpacing: "0.1rem",
+                    letterSpacing: "0.05rem",
                     textTransform: "none",
+                    backgroundColor:
+                      location.pathname === page.path
+                        ? "rgba(255, 255, 255, 0.1)"
+                        : "transparent",
                     "&:hover": {
                       backgroundColor: "rgba(255, 255, 255, 0.08)",
                     },
@@ -115,7 +121,11 @@ function Navbar() {
           >
             {pages.map((page) => (
               <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">
+                <Typography
+                  variant="body1"
+                  textAlign="center"
+                  sx={{ letterSpacing: "0.05rem" }}
+                >
                   <NavLink
                     to={page.path}
                     style={{ textDecoration: "none", color: "inherit" }}

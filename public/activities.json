@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "title": "Hiking",
+      "image": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "description": "Enjoy a scenic hike through beautiful nature trails.",
+      "date": "2024-05-10",
+      "location": "National Park",
+      "duration": "3 hours",
+      "participants": 20,
+      "details": "Join us for a refreshing hiking experience as we explore the stunning landscapes and diverse wildlife of the National Park. Our guided hike will take you through lush forests, babbling streams, and panoramic viewpoints, offering plenty of photo opportunities along the way. Whether you're an experienced hiker or a beginner, this excursion is perfect for nature lovers of all levels."
+    },
+    {
+      "id": 2,
+      "title": "Cooking Class",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "description": "Join our cooking class and learn to make delicious dishes.",
+      "date": "2024-05-15",
+      "location": "Culinary Institute",
+      "duration": "2 hours",
+      "participants": 15,
+      "details": "Embark on a culinary journey with our expert chefs as they guide you through the art of cooking. In this hands-on class at the Culinary Institute, you'll learn essential cooking techniques, explore new flavors, and create mouthwatering dishes from scratch. Whether you're a novice or a seasoned home cook, our cooking class promises a fun and educational experience for all."
+    },
+    {
+      "id": 3,
+      "title": "Yoga Retreat",
+      "image": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "description": "Relax and rejuvenate with our yoga retreat in a serene environment.",
+      "date": "2024-05-20",
+      "location": "Mountain Resort",
+      "duration": "1 day",
+      "participants": 30,
+      "details": "Escape the hustle and bustle of daily life and indulge in a day of relaxation at our serene yoga retreat. Nestled in the tranquil surroundings of a Mountain Resort, this retreat offers the perfect opportunity to unwind, recharge, and connect with your inner self. Immerse yourself in rejuvenating yoga sessions, guided meditation, and wellness workshops, all designed to promote physical, mental, and emotional well-being."
+    },
+    {
+    "id": 4,
+    "title": "Mountain Biking",
+    "image": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+    "description": "Experience the thrill of mountain biking on challenging trails.",
+    "date": "2024-05-12",
+    "location": "Mountain Trails",
+    "duration": "4 hours",
+    "participants": 15,
+    "details": "Get your adrenaline pumping with an exhilarating mountain biking adventure on our challenging trails. Navigate through rugged terrain, conquer steep inclines, and zoom down thrilling descents as you explore the beauty of the mountains. Our experienced guides will ensure your safety while providing tips and tricks to enhance your biking skills. Whether you're a seasoned rider or new to the sport, this adrenaline-fueled excursion promises an unforgettable experience for all."
+    },
+    {
+    "id": 5,
+    "title": "Art Workshop",
+    "image": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+    "description": "Unleash your creativity in our interactive art workshop.",
+    "date": "2024-05-18",
+    "location": "Art Studio",
+    "duration": "3 hours",
+    "participants": 10,
+    "details": "Discover the artist within you in our engaging art workshop. Led by professional artists, you'll explore various techniques and mediums to create your own masterpiece. Whether you're a beginner or an experienced artist, our workshop offers a supportive environment where you can unleash your creativity and express yourself through art."
+    },
+    {
+    "id": 6,
+    "title": "Wine Tasting",
+    "image": "https://cdn.dummyjson.com/product-images/6/thumbnail.jpg",
+    "description": "Savor the flavors of exquisite wines in a delightful tasting session.",
+    "date": "2024-05-25",
+    "location": "Vineyard",
+    "duration": "2 hours",
+    "participants": 25,
+    "details": "Indulge your senses in an enchanting wine tasting experience at our scenic vineyard. Sample a curated selection of fine wines as our expert sommeliers guide you through the nuances of each varietal. Learn about the winemaking process, from grape to glass, and discover the perfect pairings for your favorite dishes. Whether you're a wine enthusiast or a novice, this tasting session promises to delight your palate and expand your appreciation for wine."
+    },
+    {
+    "id": 7,
+    "title": "Photography Tour",
+    "image": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+    "description": "Capture stunning landscapes and memorable moments in our photography tour.",
+    "date": "2024-05-22",
+    "location": "Scenic Locations",
+    "duration": "4 hours",
+    "participants": 12,
+    "details": "Embark on a picturesque journey through breathtaking landscapes in our photography tour. Led by professional photographers, you'll learn how to capture stunning images while exploring the beauty of nature. From majestic mountains to tranquil lakes, each stop offers a unique opportunity to hone your photography skills and create lasting memories. Whether you're a beginner or an experienced photographer, this tour is perfect for anyone who loves to capture the beauty of the world through a lens."
+    },
+    {
+    "id": 8,
+    "title": "Fitness Bootcamp",
+    "image": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+    "description": "Challenge yourself in our high-intensity fitness bootcamp.",
+    "date": "2024-05-14",
+    "location": "Outdoor Gym",
+    "duration": "2 hours",
+    "participants": 20,
+    "details": "Take your fitness to the next level with our dynamic and challenging bootcamp. Led by certified trainers, this high-intensity workout combines cardio, strength training, and agility exercises to help you achieve your fitness goals. Whether you're looking to build strength, burn calories, or improve your overall endurance, our bootcamp offers a fun and motivating environment to push your limits and unleash your full potential."
+    },
+    {
+    "id": 9,
+    "title": "Bird Watching Tour",
+    "image": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+    "description": "Explore the world of birds in our guided bird watching tour.",
+    "date": "2024-05-19",
+    "location": "Nature Reserve",
+    "duration": "3 hours",
+    "participants": 15,
+    "details": "Embark on an avian adventure in our guided bird watching tour through the pristine habitats of the Nature Reserve. With the help of experienced birding guides, you'll have the opportunity to observe a diverse array of bird species in their natural habitat. From colorful songbirds to majestic raptors, each sighting offers a unique glimpse into the fascinating world of birds. Whether you're a seasoned birder or new to bird watching, this tour is sure to delight nature enthusiasts of all ages."
+    }
+    ]
+  

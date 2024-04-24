@@ -18,7 +18,7 @@ const ActivityPage = () => {
 
   return (
     <div className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-center mb-8 sm:text-3xl sm:mb-6">
           Our Activities
         </h1>
@@ -28,14 +28,14 @@ const ActivityPage = () => {
             <CircularProgress />
           </div>
         ) : (
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 justify-items-center">
             {activities.map((activity) => (
               <ActivityCard key={activity.id} activity={activity} />
             ))}
           </section>
         )}
 
-        <section className="mt-12">
+        <section className="mt-12 w-full">
           <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
             <img
               src="initiative.jpg"
@@ -57,7 +57,7 @@ const ActivityPage = () => {
           </div>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8 w-full">
           <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
             <img
               src="volunteer.jpg"
@@ -80,7 +80,7 @@ const ActivityPage = () => {
           </div>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8 w-full">
           <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
             <img
               src="education.svg"
@@ -100,7 +100,7 @@ const ActivityPage = () => {
           </div>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8 w-full">
           <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
             <img
               src="upcoming.jpg"
@@ -119,7 +119,34 @@ const ActivityPage = () => {
           </div>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8 w-full">
+          <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
+            <img
+              src="attention.jpg"
+              alt="Attention Message"
+              className="w-full object-cover h-full"
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-bold mb-2">Attention Please!!</h2>
+              <p className="text-gray-700">
+                For the information of all, Epsilon is a non-political,
+                non-government, voluntary organization. Epsilon is not
+                subordinate to any single person or organization, so it is
+                discouraged to contact any single person/organization using the
+                Epsilon title. Note that Epsilon will not take responsibility
+                for any harm or fraud by any third person / organization other
+                than Epsilon!
+                <br />
+                <br />
+                𝐍𝐨𝐭𝐞: 𝐄𝐩𝐬𝐢𝐥𝐨𝐧 𝐞𝐧𝐜𝐨𝐮𝐫𝐚𝐠𝐞 𝐭𝐨 𝐥𝐞𝐚𝐯𝐞 𝐚 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐨𝐧 𝐨𝐮𝐫 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥
+                𝐞𝐦𝐚𝐢𝐥/𝐩𝐚𝐠𝐞.
+              </p>
+              <div className="border-b border-gray-300 mt-4"></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8 w-full">
           <div className="bg-white border border-gray-300 rounded-lg overflow-hidden">
             <iframe
               title="Map"

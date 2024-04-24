@@ -46,7 +46,7 @@ export default function CustomizedAccordions() {
   return (
     <div>
       <Typography
-        variant="h5" // Smaller than h4 for a slightly smaller title
+        variant="h5"
         component="h2"
         sx={{
           mt: 2,
@@ -69,12 +69,16 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Collapsible Group Item #1</Typography>
+          <Typography>What services does Epsilon provide?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Epsilon provides free educational support to students in Gobindaganj
+            Upazila. Our services include tutoring in various subjects, exam
+            preparation assistance, mentorship programs, and educational
+            outreach initiatives within the community. We aim to empower
+            students to achieve their academic goals and foster a love for
+            learning.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -83,12 +87,17 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Collapsible Group Item #2</Typography>
+          <Typography>Who can benefit from Epsilon's programs?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Epsilon's programs are open to all students in Gobindaganj Upazila,
+            regardless of age, gender, or socioeconomic background. We believe
+            that education should be accessible to everyone, and we strive to
+            support students at all levels, from primary school to higher
+            education. Whether a student needs help with homework, exam
+            preparation, or guidance for future career paths, Epsilon is here to
+            assist.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -97,12 +106,20 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Collapsible Group Item #3</Typography>
+          <Typography>
+            How can I get involved with Epsilon as a volunteer?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            We welcome volunteers who are passionate about education and
+            community service to join our team. If you're a university student
+            in Gobindaganj Upazila and interested in volunteering with Epsilon,
+            you can reach out to us through our website or social media
+            channels. We offer various opportunities for volunteering, including
+            tutoring, organizing outreach events, and administrative support.
+            Join us in making a difference in the lives of students in our
+            community!
           </Typography>
         </AccordionDetails>
       </Accordion>

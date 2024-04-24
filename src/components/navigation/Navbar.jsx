@@ -41,7 +41,10 @@ function Navbar() {
               justifyContent: "space-between",
             }}
           >
-            <img className="w-14 m-2" src="logo-epsilon.svg" alt="logo" />
+            <NavLink to="/">
+              {" "}
+              <img className="w-14 m-2" src="logo-epsilon.svg" alt="logo" />
+            </NavLink>
 
             <Box
               sx={{
@@ -76,10 +79,11 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
-
-            <Button variant="outlined" color="inherit" sx={{ my: 2, mx: 2 }}>
-              Contact Us
-            </Button>
+            <a href="https://www.facebook.com/epsilon2018">
+              <Button variant="outlined" color="inherit" sx={{ my: 2, mx: 2 }}>
+                Contact Us
+              </Button>
+            </a>
           </Box>
           <IconButton
             size="large"

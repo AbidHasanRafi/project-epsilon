@@ -12,6 +12,7 @@ import {
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import ValueIcon from "@mui/icons-material/EmojiObjects";
+import { Helmet } from "react-helmet";
 
 const Team = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -29,6 +30,9 @@ const Team = () => {
 
   return (
     <div className="p-4">
+      <Helmet>
+        <title>Epsilon - Team</title>
+      </Helmet>
       <h1 className="text-3xl text-indigo-700 font-bold mb-4">
         Meet Team Epsilon
       </h1>

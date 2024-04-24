@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ActivityCard from "./ActivityCard";
 import { Box, CircularProgress } from "@mui/material";
+import { Helmet } from "react-helmet";
 
 const ActivityPage = () => {
   const [activities, setActivities] = useState([]);
@@ -18,6 +19,9 @@ const ActivityPage = () => {
 
   return (
     <div className="bg-gray-100 py-12">
+      <Helmet>
+        <title>Epsilon - Activities</title>
+      </Helmet>
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-center mb-8 sm:text-3xl sm:mb-6">
           Our Activities

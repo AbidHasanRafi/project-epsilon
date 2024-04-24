@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Footer() {
@@ -53,15 +53,16 @@ function Footer() {
               Follow Us
             </Typography>
             <Box sx={{ display: "inline-flex" }}>
-              <IconButton aria-label="facebook" color="inherit">
-                <FacebookIcon />
-              </IconButton>
-              <IconButton aria-label="twitter" color="inherit">
-                <TwitterIcon />
-              </IconButton>
-              <IconButton aria-label="instagram" color="inherit">
-                <InstagramIcon />
-              </IconButton>
+              <a href="https://www.facebook.com/epsilon2018">
+                <IconButton aria-label="facebook" color="inherit">
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+              <a href="https://www.linkedin.com/company/epsilon2018/">
+                <IconButton aria-label="linkedin" color="inherit">
+                  <LinkedInIcon />
+                </IconButton>
+              </a>
             </Box>
           </Grid>
         </Grid>

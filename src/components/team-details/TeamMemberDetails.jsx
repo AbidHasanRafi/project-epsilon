@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   Card,
   CardContent,
@@ -47,6 +48,9 @@ const TeamMemberDetails = () => {
 
   return (
     <div className="container mx-auto my-8 px-4">
+      <Helmet>
+        <title>Team Details</title>
+      </Helmet>
       <Card>
         <CardContent>
           <Grid container spacing={3}>

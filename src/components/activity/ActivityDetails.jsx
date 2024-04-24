@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Box, Typography, IconButton } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { Helmet } from "react-helmet";
 
 const ActivityDetails = () => {
   const { id } = useParams();
@@ -30,18 +31,21 @@ const ActivityDetails = () => {
         flexDirection: "column",
         alignItems: "center",
         padding: "20px",
-        backgroundColor: "#ffffff", // white background
-        color: "#333", // dark text color
+        backgroundColor: "#ffffff",
+        color: "#333",
         boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.1)",
         borderRadius: "10px",
-        border: "1px solid #ddd", // light gray border
+        border: "1px solid #ddd",
         marginTop: "40px",
         marginBottom: "20px",
       }}
     >
+      <Helmet>
+        <title>Activity Details</title>
+      </Helmet>
       <Box sx={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
         <IconButton
-          sx={{ color: "#333" }} // dark icon color
+          sx={{ color: "#333" }}
           onClick={() => window.history.back()}
         >
           <ArrowBackIcon />
@@ -51,8 +55,8 @@ const ActivityDetails = () => {
           sx={{
             marginLeft: "10px",
             fontWeight: "bold",
-            color: "#333", // dark text color
-            fontSize: { xs: "24px", md: "32px" }, // responsive font size
+            color: "#333",
+            fontSize: { xs: "24px", md: "32px" },
           }}
         >
           {activity.title}
@@ -63,7 +67,7 @@ const ActivityDetails = () => {
           width: "100%",
           maxWidth: "calc(100% - 40px)",
           marginBottom: "20px",
-          border: "1px solid #ddd", // light gray border
+          border: "1px solid #ddd",
           borderRadius: "10px",
           overflow: "hidden",
         }}

@@ -18,6 +18,20 @@ GitHub Repository: [Epsilon Repository](https://github.com/AbidHasanRafi/project
 
 Epsilon is a front-end project dedicated to creating a user-friendly and interactive learning experience. We utilize modern web technologies to deliver educational content that is both informative and engaging.
 
+## Features
+
+- **Personalized Support**: Customized advice and coping strategies based on user inputs.
+- **Resource Library**: A wealth of articles, exercises, and tools for mental health education and empowerment.
+- **Confidential and Secure**: Robust security measures to protect user information.
+- **Community and Connection**: Supportive online community for shared experiences and mutual support.
+
+## Technologies
+
+- **Tailwind**
+- **React**
+- **Material-UI**
+- **Emotion/react**
+
 ## Installation
 
 To get a local copy up and running, follow these simple steps.

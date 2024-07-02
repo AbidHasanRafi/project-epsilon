@@ -1,8 +1,72 @@
-# React + Vite
+# Epsilon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Epsilon, where we empower individuals through education!
 
-Currently, two official plugins are available:
+## Mission
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our mission is to provide high-quality, accessible, and engaging learning resources for free. We believe in making education accessible to everyone, everywhere, without the constraints of cost, location, or access barriers.
+
+## Website
+
+Explore our platform: [Epsilon Website](https://epsilon-gobindaganj.netlify.app/)
+
+## Repository
+
+GitHub Repository: [Epsilon Repository](https://github.com/AbidHasanRafi/project-epsilon)
+
+## Description
+
+Epsilon is a front-end project dedicated to creating a user-friendly and interactive learning experience. We utilize modern web technologies to deliver educational content that is both informative and engaging.
+
+## Installation
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js (https://nodejs.org/)
+- npm (comes with Node.js) or yarn (https://yarnpkg.com/)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/AbidHasanRafi/project-epsilon.git
+cd project-epsilon
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
+
+### Build the Project
+
+```bash
+npm run build
+```
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to be. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+- **Author**: [Abid Hasan Rafi](https://github.com/AbidHasanRafi)
+- **Project Link**: [Epsilon](https://github.com/AbidHasanRafi/project-epsilon)
